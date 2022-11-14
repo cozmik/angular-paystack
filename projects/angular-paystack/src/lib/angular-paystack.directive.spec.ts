@@ -2,14 +2,14 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { Component, DebugElement } from '@angular/core';
 import { By } from '@angular/platform-browser';
 
-import { Angular4PaystackDirective } from './angular4-paystack.directive';
-import { Angular4PaystackService } from './angular4-paystack.service';
+import { AngularPaystackDirective } from './angular-paystack.directive';
+import { AngularPaystackService } from './angular-paystack.service';
 import { PUBLIC_KEY_TOKEN } from './paystack-token';
 
 @Component({
   template: `<button type="text"
     class="btn btn-danger m-3"
-    angular4-paystack
+    angular-paystack
     [channels]="['card', 'bank']"
     [email]="'mailexample@mail.com'"
     [amount]="'5000000'"
@@ -44,9 +44,9 @@ describe('Angular4PaystackDirective', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Angular4PaystackDirective, TestComponent ],
+      declarations: [ AngularPaystackDirective, TestComponent ],
       providers: [
-        Angular4PaystackService,
+        AngularPaystackService,
         { provide: PUBLIC_KEY_TOKEN, useValue: 'public-key' }
       ]
     })

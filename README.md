@@ -15,12 +15,12 @@ In your `app.module.ts` or any module where the component or directive would be 
 ```ts
 import { NgModule } from '@angular/core';
 
-import { Angular4PaystackModule } from 'angular4-paystack';
+import { AngularPaystackModule } from 'angular4-paystack';
 ...
 
 @NgModule({
   imports: [
-    Angular4PaystackModule.forRoot('pk_test_xxxxxxxxxxxxxxxxxxxxxxxx'),
+    AngularPaystackModule.forRoot('pk_test_xxxxxxxxxxxxxxxxxxxxxxxx'),
   ]
 })
 
@@ -32,7 +32,7 @@ There are two available options
 
 * **AngularPaystackComponent**: Renders a button which when clicked loads paystack Inline in an iframe
   ```html
-    <angular4-paystack
+    <angular-paystack
       [email]="'mailexample@mail.com'"
       [amount]="5000000"
       [ref]="reference"
@@ -42,13 +42,13 @@ There are two available options
       (callback)="paymentDone($event)"
     >
       Pay with Paystack
-    </angular4-paystack>
+    </angular-paystack>
   ```
 
 *  **AngularPaystackDirective**: A directive that loads paystack inline in an iframe when clicked
 ```html
   <button
-    angular4-paystack
+    angular-paystack
     [key]="'pk_test_xxxxxxxxxxxxxxxxxxxxxxx'"
     [email]="'mailexample@mail.com'"
     [amount]="5000000"
@@ -97,7 +97,7 @@ And then in your `component.ts`
 Also you can use the `paystackOptions` object like so:
 ```html
   <button
-    angular4-paystack
+    angular-paystack
     [paystackOptions]="options"
     (paymentInit)="paymentInit()"
     (onClose)="paymentCancel()"
@@ -143,14 +143,14 @@ Also, you can pass in a key in the component and the directive, in such situatio
 ```ts
 @NgModule({
   imports: [
-    Angular4PaystackModule.forRoot('pk_test_1'),
+    AngularPaystackModule.forRoot('pk_test_1'),
   ]
 })
 ```
 and this in your component
 ```html
   <button
-    angular4-paystack
+    angular-paystack
     [key]="'pk_test_2'"
     [email]="'mailexample@mail.com'"
     [amount]="5000000"
@@ -198,12 +198,12 @@ Then `pk_test_2` would be used instead
 Please feel free to fork this package and contribute by submitting a pull request to enhance the functionalities.
 
 Two projects exist in this repository
-- The `Angular4-Paystack` package: [`./projects/angular4-paystack`](./projects/angular4-paystack)
+- The `Angular4-Paystack` package: [`./projects/angular4-paystack`](./projects/angular-paystack)
 - The demo: [`./src`](./src)
 
 ### Angular4-paystack project
 - Found at `./projects/angular4-paystack/src/lib`.
-- The artifacts ([README.md](./projects/angular4-paystack/README.md), [CHANGELOG.md](./projects/angular4-paystack/CHANGELOG.md) and [LICENSE.md](./projects/angular4-paystack/LICENSE.md)) in the `./projects/angular4-paystack/` folder are overwritten on [build](https://github.com/ashinzekene/angular4-paystack/blob/master/package.json#L7)
+- The artifacts ([README.md](projects/angular-paystack/README.md), [CHANGELOG.md](projects/angular-paystack/CHANGELOG.md) and [LICENSE.md](projects/angular-paystack/LICENSE.md)) in the `./projects/angular4-paystack/` folder are overwritten on [build](https://github.com/ashinzekene/angular4-paystack/blob/master/package.json#L7)
 - Running `npm run build` on the main folder builds this project by [default](https://github.com/ashinzekene/angular4-paystack/blob/master/angular.json#L155)
 
 ### Demo

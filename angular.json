@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular4-paystack-lib": {
+    "angular-paystack-lib": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -45,7 +45,7 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "deployUrl": "angular4-paystack/",
+              "deployUrl": "angular-paystack/",
               "budgets": [
                 {
                   "type": "initial",
@@ -59,18 +59,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular4-paystack-lib:build"
+            "browserTarget": "angular-paystack-lib:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular4-paystack-lib:build:production"
+              "browserTarget": "angular-paystack-lib:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular4-paystack-lib:build"
+            "browserTarget": "angular-paystack-lib:build"
           }
         },
         "test": {
@@ -107,43 +107,43 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular4-paystack-lib:serve"
+            "devServerTarget": "angular-paystack-lib:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular4-paystack-lib:serve:production"
+              "devServerTarget": "angular-paystack-lib:serve:production"
             }
           }
         }
       }
     },
-    "angular4-paystack": {
+    "angular-paystack": {
       "projectType": "library",
-      "root": "projects/angular4-paystack",
-      "sourceRoot": "projects/angular4-paystack/src",
+      "root": "projects/angular-paystack",
+      "sourceRoot": "projects/angular-paystack/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/angular4-paystack/tsconfig.lib.json",
-            "project": "projects/angular4-paystack/ng-package.json"
+            "tsConfig": "projects/angular-paystack/tsconfig.lib.json",
+            "project": "projects/angular-paystack/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/angular4-paystack/src/test.ts",
-            "tsConfig": "projects/angular4-paystack/tsconfig.spec.json",
-            "karmaConfig": "projects/angular4-paystack/karma.conf.js"
+            "main": "projects/angular-paystack/src/test.ts",
+            "tsConfig": "projects/angular-paystack/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-paystack/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/angular4-paystack/tsconfig.lib.json",
-              "projects/angular4-paystack/tsconfig.spec.json"
+              "projects/angular-paystack/tsconfig.lib.json",
+              "projects/angular-paystack/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -152,5 +152,5 @@
         }
       }
     }},
-  "defaultProject": "angular4-paystack"
+  "defaultProject": "angular-paystack"
 }

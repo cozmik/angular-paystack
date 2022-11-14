@@ -1,18 +1,18 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Angular4PaystackEmbedComponent } from './angular4-paystack-embed.component';
-import { Angular4PaystackService } from './angular4-paystack.service';
+import { AngularPaystackComponent } from './angular-paystack.component';
+import { AngularPaystackService } from './angular-paystack.service';
 import { PUBLIC_KEY_TOKEN } from './paystack-token';
 
-describe('Angular4PaystackEmbedComponent', () => {
-  let component: Angular4PaystackEmbedComponent;
-  let fixture: ComponentFixture<Angular4PaystackEmbedComponent>;
+describe('Angular4PaystackComponent', () => {
+  let component: AngularPaystackComponent;
+  let fixture: ComponentFixture<AngularPaystackComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Angular4PaystackEmbedComponent ],
+      declarations: [ AngularPaystackComponent ],
       providers: [
-        Angular4PaystackService,
+        AngularPaystackService,
         { provide: PUBLIC_KEY_TOKEN, useValue: 'public-key' }
       ]
     })
@@ -20,14 +20,11 @@ describe('Angular4PaystackEmbedComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Angular4PaystackEmbedComponent);
+    fixture = TestBed.createComponent(AngularPaystackComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
   it('should create', () => {
     expect(component).toBeTruthy();
   });

@@ -1,0 +1,39 @@
+{
+  "name": "angular-paystack",
+  "version": "3.0.2",
+  "peerDependencies": {
+    "@angular/common": "8.0.3 - 12.*",
+    "@angular/core": "8.0.3 - 12.*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashinzekene/angular4-paystack.git"
+  },
+  "license": "MIT",
+  "author": {
+    "email": "kelvinoesekhile@gmail.com",
+    "name": "Kelvin Esekhile",
+    "url": "https://github.com/ashinzekene"
+  },
+  "bugs": {
+    "email": "kelvinoesekhile@gmail.com",
+    "url": "https://github.com/ashinzekene/angular4-paystack/issues"
+  },
+  "keywords": [
+    "angular",
+    "paystack",
+    "transaction",
+    "payment"
+  ],
+  "description": "Angular wrapper for integrating paystack transactions. A up to date version of angular4-paystack https://github.com/ashinzekene/angular4-paystack.git",
+  "main": "bundles/angular-paystack.umd.js",
+  "module": "fesm5/angular-paystack.js",
+  "es2015": "fesm2015/angular-paystack.js",
+  "esm5": "esm5/angular-paystack.js",
+  "esm2015": "esm2015/angular-paystack.js",
+  "fesm5": "fesm5/angular-paystack.js",
+  "fesm2015": "fesm2015/angular-paystack.js",
+  "typings": "angular4-paystack.d.ts",
+  "metadata": "angular4-paystack.metadata.json",
+  "sideEffects": false
+}

@@ -1,12 +1,12 @@
 {
-  "name": "angular4-paystack-lib",
+  "name": "angular-paystack-lib",
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "node scripts/copy-artifacts && ng build",
-    "test": "ng test angular4-paystack",
-    "lint": "ng lint angular4-paystack",
+    "test": "ng test angular-paystack",
+    "lint": "ng lint angular-paystack",
     "e2e": "ng e2e"
   },
   "private": false,

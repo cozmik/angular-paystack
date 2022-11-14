@@ -2,7 +2,7 @@
 <div class="text-center lead">{{ title }}</div>
 <div class="container">
   <div class="paystack-buttons text-center d-md-flex d-lg-flex d-xl-flex justify-content-between">
-    <angular4-paystack
+    <angular-paystack
       [class]="'btn btn-primary m-3'"
       [email]="'mailexample@mail.com'"
       (paymentInit)="paymentInit()"
@@ -13,14 +13,14 @@
       [class]="'btn btn-primary'"
     >
       Pay With Paystack component
-    </angular4-paystack>
+    </angular-paystack>
 
     <button
       class="btn btn-danger m-3"
-      angular4-paystack
+      angular-paystack
       [paystackOptions]="options"
       (onClose)="paymentCancel()"
-      (paymentInit)="paymentInit()"      
+      (paymentInit)="paymentInit()"
       (callback)="paymentDone($event)"
       [class]="'btn btn-primary btn-lg'"
     >
@@ -37,9 +37,9 @@
   <h3 class="text-center my-3">Paystack Embed</h3>
   <div *ngIf="showEmbed">
     <angular4-paystack-embed
-      angular4-paystack
+      angular-paystack
       [email]="'mailexample@mail.com'"
-      (paymentInit)="paymentInit()"      
+      (paymentInit)="paymentInit()"
       [amount]="'5000000'" [ref]="tRef" (onClose)="paymentCancel()" (callback)="paymentDone($event)"
       [class]="'btn btn-primary btn-lg'" [channels]="['card']"
     ></angular4-paystack-embed>

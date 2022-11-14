@@ -12,7 +12,7 @@ declare var window: MyWindow;
 @Injectable({
   providedIn: 'root',
 })
-export class Angular4PaystackService {
+export class AngularPaystackService {
   constructor(@Inject(PUBLIC_KEY_TOKEN) private token: string) {}
 
   loadScript(): Promise<void> {

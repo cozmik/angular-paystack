@@ -1,6 +1,6 @@
 import { Directive, Input, Output, EventEmitter, HostListener } from '@angular/core';
 import { PaystackOptions, PrivatePaystackOptions } from './paystack-options';
-import { Angular4PaystackService } from './angular4-paystack.service';
+import { AngularPaystackService } from './angular-paystack.service';
 
 interface MyWindow extends Window {
   PaystackPop: {
@@ -10,9 +10,9 @@ interface MyWindow extends Window {
 declare var window: MyWindow;
 
 @Directive({
-  selector: '[angular4-paystack]', // tslint:disable-line
+  selector: '[angular-paystack]', // tslint:disable-line
 })
-export class Angular4PaystackDirective {
+export class AngularPaystackDirective {
   @Input() key: string;
   @Input() email: string;
   @Input() amount: number;
@@ -34,7 +34,7 @@ export class Angular4PaystackDirective {
   private _paystackOptions: Partial<PrivatePaystackOptions>; // tslint:disable-line
   private isPaying = false;
 
-  constructor(private paystackService: Angular4PaystackService) {}
+  constructor(private paystackService: AngularPaystackService) {}
 
   async pay() {
     let errorText = '';
