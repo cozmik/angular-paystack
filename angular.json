@@ -150,6 +150,6 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-paystack"
+    }
+  }
 }
