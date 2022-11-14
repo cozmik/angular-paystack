@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "node scripts/copy-artifacts && ng build",
+    "build": "node scripts/copy-artifacts && ng build angular-paystack",
     "test": "ng test angular-paystack",
     "lint": "ng lint angular-paystack",
     "e2e": "ng e2e"
@@ -21,13 +21,14 @@
     "@angular/platform-browser": "^14.2.10",
     "@angular/platform-browser-dynamic": "^14.2.10",
     "@angular/router": "^14.2.10",
+    "angular-paystack": "file:dist/angular-paystack",
     "rxjs": "~7.5.7",
     "tslib": "^2.4.1",
     "zone.js": "~0.12.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.9",
-    "@angular-devkit/build-ng-packagr": "^0.800.6",
+    "@angular-devkit/build-ng-packagr": "^0.1002.0",
     "@angular/cli": "^14.2.9",
     "@angular/compiler-cli": "^14.2.10",
     "@angular/language-service": "^14.2.10",

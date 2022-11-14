@@ -19,9 +19,10 @@
       "es2018",
       "dom"
     ],
+    "skipLibCheck": true,
     "paths": {
       "angular4-paystack": [
-        "dist/angular4-paystack"
+        "dist/angular-paystack"
       ],
     }
   }

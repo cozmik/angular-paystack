@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PaystackOptions } from 'angular4-paystack';
+import {PaystackOptions} from 'angular-paystack';
 
 @Component({
   selector: 'app-root',

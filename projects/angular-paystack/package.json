@@ -1,23 +1,23 @@
 {
   "name": "angular-paystack",
-  "version": "3.0.2",
+  "version": "1.0.0",
   "peerDependencies": {
-    "@angular/common": "8.0.3 - 12.*",
-    "@angular/core": "8.0.3 - 12.*"
+    "@angular/common": "8.0.3 - 14.*",
+    "@angular/core": "8.0.3 - 14.*"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ashinzekene/angular4-paystack.git"
+    "url": "git+https://github.com/cozmik/angular-paystack.git"
   },
   "license": "MIT",
   "author": {
     "email": "kelvinoesekhile@gmail.com",
     "name": "Kelvin Esekhile",
-    "url": "https://github.com/ashinzekene"
+    "url": "https://github.com/cozmik"
   },
   "bugs": {
     "email": "kelvinoesekhile@gmail.com",
-    "url": "https://github.com/ashinzekene/angular4-paystack/issues"
+    "url": "https://github.com/cozmik/angular-paystack/issues"
   },
   "keywords": [
     "angular",
@@ -33,7 +33,7 @@
   "esm2015": "esm2015/angular-paystack.js",
   "fesm5": "fesm5/angular-paystack.js",
   "fesm2015": "fesm2015/angular-paystack.js",
-  "typings": "angular4-paystack.d.ts",
-  "metadata": "angular4-paystack.metadata.json",
+  "typings": "angular-paystack.d.ts",
+  "metadata": "angular-paystack.metadata.json",
   "sideEffects": false
 }

@@ -1,12 +1,12 @@
 # ANGULAR4-PAYSTACK
 
-> This is an angular module that abstracts the complexity of making paystack payments with Angular2+.
+> This is an angular module that abstracts the complexity of making paystack payments with Angular.
 
 ## USAGE
 
 ### 1. Install the module
 ```sh
-npm install --save angular4-paystack
+npm install angular-paystack
 ```
 
 ### 2. Import the module
@@ -15,7 +15,7 @@ In your `app.module.ts` or any module where the component or directive would be 
 ```ts
 import { NgModule } from '@angular/core';
 
-import { AngularPaystackModule } from 'angular4-paystack';
+import { AngularPaystackModule } from 'angular-paystack';
 ...
 
 @NgModule({

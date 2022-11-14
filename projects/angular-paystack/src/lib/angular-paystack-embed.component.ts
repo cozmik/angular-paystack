@@ -8,7 +8,7 @@ interface MyWindow extends Window {
 declare var window: Partial<MyWindow>;
 
 @Component({
-  selector: 'angular4-paystack-embed',
+  selector: 'angular-paystack-embed',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `<div id="paystackEmbedContainer"></div>`
 })

@@ -4,7 +4,7 @@ import { AngularPaystackComponent } from './angular-paystack.component';
 import { AngularPaystackService } from './angular-paystack.service';
 import { PUBLIC_KEY_TOKEN } from './paystack-token';
 
-describe('Angular4PaystackComponent', () => {
+describe('AngularPaystackComponent', () => {
   let component: AngularPaystackComponent;
   let fixture: ComponentFixture<AngularPaystackComponent>;
 

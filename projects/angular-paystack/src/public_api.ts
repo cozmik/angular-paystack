@@ -1,5 +1,5 @@
 /*
- * Public API Surface of angular4-paystack
+ * Public API Surface of angular-paystack
  */
 
 export * from './lib/angular-paystack.component';

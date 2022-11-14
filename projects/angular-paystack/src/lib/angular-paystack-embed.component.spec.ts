@@ -4,7 +4,7 @@ import { AngularPaystackEmbedComponent } from './angular-paystack-embed.componen
 import { AngularPaystackService } from './angular-paystack.service';
 import { PUBLIC_KEY_TOKEN } from './paystack-token';
 
-describe('Angular4PaystackEmbedComponent', () => {
+describe('AngularPaystackEmbedComponent', () => {
   let component: AngularPaystackEmbedComponent;
   let fixture: ComponentFixture<AngularPaystackEmbedComponent>;
 

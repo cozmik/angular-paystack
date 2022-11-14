@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { InjectionToken } from '@angular/core';\nexport const PUBLIC_KEY_TOKEN = new InjectionToken('paystack.publickey');","map":null,"metadata":{},"sourceType":"module"}

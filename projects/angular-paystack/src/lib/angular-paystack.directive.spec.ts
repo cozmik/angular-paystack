@@ -37,7 +37,7 @@ class TestComponent {
   }
 }
 
-describe('Angular4PaystackDirective', () => {
+describe('AngularPaystackDirective', () => {
   let component: TestComponent;
   let fixture: ComponentFixture<TestComponent>;
   let payButton: DebugElement;
